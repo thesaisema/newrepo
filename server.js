@@ -28,3 +28,12 @@ const host = process.env.HOST
 app.listen(port, () => {
   console.log(`app listening on ${host}:${port}`)
 })
+
+/* ***********************
+ * Routes
+ *************************/
+app.use(require("./routes/static"))
+// Index route
+app.get("/", function(req, res) {
+  res.render("index", {title: "Home"})
+})
