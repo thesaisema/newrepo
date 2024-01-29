@@ -118,7 +118,7 @@ app.get("/", (req, res) => {
 
 // Local Server Information
 const PORT = process.env.PORT;
-const HOST = "localhost"; 
+const HOST = process.env.HOST; 
 
 // Log statement to confirm server operation
 app.listen(PORT, HOST, () => {
