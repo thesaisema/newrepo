@@ -117,8 +117,8 @@ app.get("/", (req, res) => {
 });
 
 // Local Server Information
-const PORT = process.env.PORT || 5500; // Change the default port to 10000 or configure as needed
-const HOST = "localhost"; // Binding to 0.0.0.0 makes the app reachable from the public internet
+const PORT = process.env.PORT;
+const HOST = "localhost"; 
 
 // Log statement to confirm server operation
 app.listen(PORT, HOST, () => {
