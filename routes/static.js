@@ -1,4 +1,5 @@
 const express = require('express');
+const baseController = require('../controllers/baseController');
 const router = express.Router();
 
 // Static Routes
@@ -10,5 +11,5 @@ router.use("/images", express.static(__dirname + "public/images"));
 
 module.exports = router;
 
-
-
+// Index route
+application.get("/", baseController.buildHome)
